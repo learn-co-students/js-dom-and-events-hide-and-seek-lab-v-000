@@ -2,7 +2,9 @@
 
 ## Problem Statement
 
-One of the most essential skills in our web development toolbox is finding elements in the DOM. We need the help of a couple methods to make the process quick and easy.
+One of the most essential skills in our web development toolbox is finding
+elements in the DOM. We need the help of a couple methods to make the process
+quick and easy.
 
 ## Objectives
 
@@ -30,7 +32,7 @@ To practice finding elements in the DOM, we're going to make use of two methods 
 ```
 
 If we called `document.querySelector('div')`, the method would return the first
-`div` (whose `.innerHTML` is "Hello!").
+`div` (whose content is "Hello!").
 
 Selectors aren't limited to tag names, though (otherwise why not just use `document.getElementsByTagName('div')[0]`?). We can get very fancy.
 
@@ -99,10 +101,10 @@ then come back when you're ready.
 
 ### `querySelectorAll()`
 
-`querySelectorAll` works a lot like `querySelector()` -- it accepts a selector
+`querySelectorAll` works a lot like `querySelector()` — it accepts a selector
 as its argument, and it searches starting from the element that it's called on
-(or from `document`) -- but instead of returning the _first_ match, it returns a
-NodeList (which, remember, is _not_ an Array) of matching elements.
+(or from `document`) — but instead of returning the _first_ match, it returns a
+NodeList (which, remember, is _not_ an Array) of _all_ matching elements.
 
 Given a document like
 
@@ -121,10 +123,10 @@ Given a document like
 ```
 
 If we called `document.getElementById('app').querySelectorAll('ul.ranked-list
-li')`, we'd get back a NodeList of `<li>1</li>, <li>2</li>, <li>10</li>,
+li')`, we'd get back a list of Nodes corresponding to: `<li>1</li>, <li>2</li>, <li>10</li>,
 <li>11</li>`.
 
-We could change the `.innerHTML` of these `li`s like so:
+We could change the content of these `li`s like so:
 
 ``` javascript
 const lis = document.getElementById('app').querySelectorAll('ul.ranked-list li')
