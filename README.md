@@ -123,13 +123,9 @@ Given a document like
 </main>
 ```
 
-If we called `document.getElementById('app').querySelectorAll('ul.ranked-list li')`, we'd get back a list of Nodes corresponding to: `<li>1</li>, <li>2</li>,
-
-<li>10</li>,
-
-<li>11</li>`.
-
-We could change the content of these `li`s like so:
+If we called `document.getElementById('app').querySelectorAll('ul.ranked-list li')`, we'd get back a list of Nodes corresponding to `<li>1</li>`,
+`<li>2</li>`, `<li>10</li>`, `<li>11</li>`, we could change the content of these
+`li`s like so:
 
 ```javascript
 const lis = document
