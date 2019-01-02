@@ -81,7 +81,7 @@ that `ul`. Then find a `ul` that is a child (but not necessarily a direct
 descendant) of that `li`. Finally, find an `li` that is a child of that (second)
 `ul`."
 
-**NOTE:\*** The HTML property `class` is referred to as `className` in JavaScript.
+**NOTE:** The HTML property `class` is referred to as `className` in JavaScript.
 It's... unfortunate.
 
 What, then, does the second call to `querySelector()` say? Puzzle it out for a
